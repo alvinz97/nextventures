@@ -1,0 +1,8 @@
+order_number,user_id,items
+ORD-001,1,"[{""product_slug"":""apple-iphone-15"",""quantity"":1}]"
+ORD-002,1,"[{""product_slug"":""samsung-galaxy-s23"",""quantity"":2}]"
+ORD-003,1,"[{""product_slug"":""sony-wh-1000xm5-headphones"",""quantity"":1}]"
+ORD-004,1,"[{""product_slug"":""macbook-pro-16-inch"",""quantity"":1}]"
+ORD-005,1,"[{""product_slug"":""dell-xps-13-laptop"",""quantity"":3}]"
+ORD-006,1,"[{""product_slug"":""apple-iphone-15"",""quantity"":2},{""product_slug"":""dell-xps-13-laptop"",""quantity"":1}]"
+ORD-007,1,"[{""product_slug"":""sony-wh-1000xm5-headphones"",""quantity"":2},{""product_slug"":""samsung-galaxy-s23"",""quantity"":1}]"
