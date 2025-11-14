@@ -21,12 +21,14 @@ class SimulatePaymentJob implements ShouldQueue
 
     public function handle(): void
     {
-        sleep(2); // simulate API delay
+        sleep(2);
 
-        $success = rand(1, 10) > 2; // 80% success rate
+        $success = rand(1, 10) > 2;
 
         if ($success) {
-            $this->order->update(['status' => 'payment_simulated']);
+            $this->order->update([
+                'status' => 'payment_simulated'
+            ]);
             dispatch(new FinalizeOrderJob($this->order, true));
         } else {
             dispatch(new FinalizeOrderJob($this->order, false));

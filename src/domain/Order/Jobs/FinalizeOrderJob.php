@@ -23,7 +23,7 @@ class FinalizeOrderJob implements ShouldQueue
         $this->success = $success;
     }
 
-    public function handle()
+    public function handle(): void
     {
         if ($this->success) {
             $this->order->update([
